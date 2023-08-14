@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,600;6..12,700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(179, 228, 179);
+}
+
+.gameBox{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 5px 10px #888888;
+}
+
+.ptop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(131, 185, 131);
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.elem>h3{
+    color: white;
+}
+.elem>.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 10px;
+    border-radius: 10%;
+    color: rgb(11, 136, 11);
+}
+
+#pbtm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0.3rem;
+    background-color: rgb(94, 192, 94);
+    cursor: pointer;
+}
+.bubble:hover{
+    background-color: rgb(76, 158, 76);
+}
+
+.gameOver{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.gameOver>button{
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: rgb(107, 224, 107);
+    cursor: pointer;
+    color: rgb(41, 95, 41);
+    font-size: 1rem;
+}
+.gameOver>button:hover{
+    background-color: rgb(74, 201, 74);
+}
